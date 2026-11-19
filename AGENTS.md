@@ -1,0 +1,1 @@
+Update my prompt and your response in prompt-trace.md after every interaction
