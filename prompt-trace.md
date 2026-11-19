@@ -17,3 +17,9 @@
 **Prompt:** Implement the Chat Customizations Evaluations suggestion in `AGENTS.md`: replace the ambiguous phrase “any info” with “all relevant information, including responses and intermediate reasoning”.
 
 **Response:** Updated the phrase in `AGENTS.md` to match the supplied suggestion.
+
+## Interaction 4
+
+**Prompt:** “let's explore the ideas, before implementation”
+
+**Response:** Proposed exploring the project as a learning-focused wealth-management copilot before building further: start read-only with portfolio explanations, then add a deterministic rebalancing simulator, and only later explore agent orchestration with mock tools, human approval, guardrails, evaluations, and observability. Emphasized keeping investment calculations deterministic, documenting consent and account boundaries, and avoiding real trade execution. Suggested discussing the product workflow and learning goals before choosing implementation scope.

@@ -1,52 +1,40 @@
-# Educational Wealth Agent
+## Project Description
+A AI Study ( project) in the Wealth and Asset Management domain. 
+The core objective is to build an AI overlay capability for self-directed investor accounts (typically under $500k in investable assets) that operates discretionarily with client consent.
 
-A dependency-free Python CLI prototype for learning agent architecture in the
-wealth-management domain. It is an educational example, not a financial
-advisor: it does not connect to accounts, recommend personal investments, or
-execute transactions.
+## Skills
+Python
+React
+AI Acumen
+AI Agent
+LLM & Foundation Models
 
-## Run it
+## Tools
+Cursor
 
-From the project directory:
+## Key focus
+Agentic Architecture
+How RAG works
+Harness
+Skills
+Validation
+Code reviews
+Observability
+Evaluation
+LLM as judge knowledge
+Human in the loop
+Langchain
+Langgraph
+Langfuse
+Langsmith
+Guardrails
 
-```bash
-python3 -m wealth_agent --query "How does portfolio rebalancing work?"
-```
+## Domain
+Self directed vs discretionary accounts
+robo-advisors
+portfolio rebalancing
+risk profiling
 
-Omit `--query` to start an interactive session. Type `quit` to exit.
+## Goal
+BuilD a discretionary AI portfolio overlay for self-directed accounts (<$500k) using Python, LangGraph, and React. The agentic architecture combines RAG (over client risk profiles and policy mandates) with deterministic guardrails and Human-in-the-Loop checkpoints to automate portfolio rebalancing. Integrated Langfuse for end-to-end observability and an LLM-as-a-Judge evaluation harness to audit trade compliance and explanation quality.
 
-Run the tests:
-
-```bash
-python3 -m unittest discover -s tests -v
-```
-
-## Agent workflow
-
-1. **Classify** the input as educational, a personalized decision, or a request
-   to transact.
-2. **Retrieve** relevant passages from a small, local knowledge base using
-   keyword overlap.
-3. **Draft** an answer from those passages. The current model is deliberately
-   deterministic and local; no API key or external service is used.
-4. **Apply guardrails**: personal decisions and transaction requests require
-   human review, and transaction execution is always disabled.
-5. **Expose the trace**: the CLI prints the intent, retrieved sources, review
-   status, and workflow stages.
-
-The knowledge base introduces account authority and consent, risk profiling,
-rebalancing, robo-advisors, and human oversight. The tests cover retrieval,
-decision routing, and the no-execution boundary.
-
-## Learning path
-
-- Replace keyword retrieval with embeddings and a vector store, while retaining
-  source attribution and testing retrieval quality.
-- Replace the mock drafting step with an LLM behind a typed interface; keep
-  policy checks outside the model.
-- Represent the stages as a LangGraph workflow and add explicit approval
-  checkpoints before any consequential action.
-- Add evaluation cases, structured logs, and tracing (for example Langfuse or
-  LangSmith); avoid sending personal financial data to external services.
-- Add a React interface only after the agent contract and approval flow are
-  stable.
