@@ -1,1 +1,1 @@
-Update my prompt and your response in prompt-trace.md after every interaction
+Update my prompt and your response in prompt-trace.md after every interaction for trace and governance. Include the texts that adds value. Token spent on all relevant information, including responses and intermediate reasoning should mean that the information is stored in prompt-trace.md, be it response or intermediate reasonings.
